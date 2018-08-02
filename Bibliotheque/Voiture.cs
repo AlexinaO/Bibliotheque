@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bibliotheque
 {
-    class Program
+    class Voiture
     {
-        static void Main(string[] args)
-        {
-            var personne = new Personne();
-        }
+        Personne personne = new Personne(); //variable de type personne qui s'appelle personne
     }
 }

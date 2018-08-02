@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{485C8716-D6AE-4759-ACAA-CA45B31A9FA1}</ProjectGuid>
+    <ProjectGuid>{C3CFEA3F-7F0B-48DF-A59F-5B17E726FDF8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bibliotheque</RootNamespace>
-    <AssemblyName>Bibliotheque</AssemblyName>
+    <RootNamespace>NouvelleApp</RootNamespace>
+    <AssemblyName>NouvelleApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,14 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Maison.cs" />
-    <Compile Include="Personne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Voiture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bibliotheque\Bibliotheque.csproj">
+      <Project>{485c8716-d6ae-4759-acaa-ca45b31a9fa1}</Project>
+      <Name>Bibliotheque</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bibliotheque
 {
-    class Program
+    class Maison
     {
-        static void Main(string[] args)
-        {
-            var personne = new Personne();
-        }
     }
 }
